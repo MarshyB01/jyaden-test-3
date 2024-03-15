@@ -1,0 +1,289 @@
+a.active,
+a:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+/*NEXT 5 BLOCKS ARE IMAGE AND CREDIT FORMATTING*/
+.imageAndDesc {
+    float: left;
+}
+
+.imageDescription {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-family: 'Readex Pro', sans-serif;
+    color: #343348;
+    display: inline-block;
+    text-align: center;
+}
+
+img {
+    max-width: 35%;
+    border-radius: 25px;
+    object-fit: cover;
+    display: inline-block;
+    opacity: 0.85;
+    margin-top: 60px;
+}
+
+
+
+
+
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 75px;
+    font-size: 50px;
+    font-family: Jost;
+    color: #343348;
+}
+
+.details {
+    font-family: Open Sans;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 19px;
+    text-indent: 50px;
+    line-height: 35px;
+}
+
+/*EACH PAIR OF TWO TAGS HANDLES HEADER AT THE TOP OF THEIR RESPECTIVE PAGES*/
+.headerContainer {
+    background-color: #40757a;
+    background-image: url(images/windmills.jpg);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*EVERYTHING FROM BELOW TO THE END OF CONTAINER::AFTER I DONT KNOW WHAT IT DOES, BUT IT WORKS*/
+    position: relative;
+    isolation: isolate;
+    margin-bottom: 100px;
+}
+
+.headerContainer::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: rgb(144, 162, 230);
+    opacity: .5;
+}
+
+.solarContainer {
+    background-color: #40757a;
+    background-image: url(images/solarPanels.jpg);
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 25px;
+    /*EVERYTHING FROM BELOW TO THE END OF CONTAINER::AFTER I DONT KNOW WHAT IT DOES, BUT IT WORKS*/
+    position: relative;
+    isolation: isolate;
+}
+
+.solarContainer::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: rgb(228, 226, 129);
+    opacity: .5;
+    border-radius: 25px;
+}
+
+/*NEXT TWO BLOCKS FOR OLD NAVBAR, POSSIBLY DELETE*/
+.bar {
+    background-color: #a7a7a7;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.tabs {
+    font-size: 20px;
+    font-family: Readex Pro;
+    padding: 0.5em 2em;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    background-color: #a7a7a7;
+    cursor: pointer;
+    color: white;
+}
+
+/*NEW HEADER*/
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+/*UPDATED NAVBAR*/
+nav {
+    background-color: #343348;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    position: sticky;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.details {
+    padding-top: 60px;
+}
+
+/*FLHS LOGO*/
+label.logo,
+.logo a {
+    color: #c28136;
+    font-size: 45px;
+    font-family: Readex Pro;
+    margin-left: 100px;
+    line-height: 80px;
+    float: left;
+    user-select: none;
+}
+
+
+nav ul {
+    float: right;
+    margin-right: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: White;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+
+.header {
+    font-weight: bold;
+    font-family: Jost;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 90px;
+    color: #8865A4;
+    opacity: 100;
+    user-select: none;
+    letter-spacing: 5px;
+}
+
+.emphasis {
+    color: #E06666;
+    font-style: normal;
+    font-family: Open Sans;
+}
+
+
+
+
+.tabs:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.tabs:active {
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+hr {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.sources {
+    line-height: 24px;
+    font-family: Readex Pro;
+    margin-left: 200px;
+    margin-top: 60px;
+}
+
+a:link,
+a:visited {
+    font-family: Readex Pro;
+
+}
+
+
+
+/*WEBSITE CODE*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#NJ {
+    fill: red;
+}
+
+svg path {
+    fill: #adadad;
+    stroke: #ffffff;
+    stroke-width: 0.5px;
+
+}
+
+svg path:hover {
+    fill: #40757a !important;
+    transition: 0.6s;
+    cursor: pointer;
+    opacity: 0.6 !important;
+    /*we can choose to either have it fill, change opacity, or both*/
+}
+
+.data {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #343348;
+    font-family: Readex Pro;
+}
+
+/*BELOW IS THE CODE FOR THE IMAGE POPUP FOR THE INTERACTIVE MAP*/
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
